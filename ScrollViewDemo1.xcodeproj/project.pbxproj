@@ -207,7 +207,6 @@
 				TargetAttributes = {
 					39753DBC1CCD236700C937D8 = {
 						CreatedOnToolsVersion = 7.2.1;
-						DevelopmentTeam = ZGB87C6BGF;
 					};
 					39753DD51CCD236700C937D8 = {
 						CreatedOnToolsVersion = 7.2.1;
@@ -414,6 +413,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = ScrollViewDemo1/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tt.ScrollViewDemo1;
@@ -425,6 +425,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = ScrollViewDemo1/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tt.ScrollViewDemo1;

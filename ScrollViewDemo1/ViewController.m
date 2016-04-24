@@ -8,7 +8,10 @@
 
 #import "ViewController.h"
 
-@interface ViewController ()
+@interface ViewController (){
+    
+    UIScrollView *scrollView;
+}
 
 @end
 
@@ -17,6 +20,15 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    scrollView=[[UIScrollView alloc] initWithFrame:CGRectMake(0.0, 0.0, self.view.frame.size.width, self.view.frame.size.height)];
+    scrollView.pagingEnabled=YES;
+    scrollView.backgroundColor=[UIColor redColor];
+    scrollView.showsVerticalScrollIndicator=YES;
+    scrollView.showsHorizontalScrollIndicator=NO;
+    scrollView.delegate=self;
+    CGSize newSize=CGSizeMake(self.view.frame.size.width, self.view.frame.size.height*2);
+    [scrollView setContentSize:newSize];
+    [self.view addSubview:scrollView];
 }
 
 - (void)didReceiveMemoryWarning {
